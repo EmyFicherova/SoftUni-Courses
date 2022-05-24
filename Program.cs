@@ -1,20 +1,17 @@
 ﻿using System;
 
-namespace Multiplication_Table_2._0
+namespace Passed
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            int times = int.Parse(Console.ReadLine());
-            do
-            {
-                Console.WriteLine($"{n} X {times} = {n * times}");
-                times++;
+            double grade = double.Parse(Console.ReadLine());
 
-            } while (times <= 10);
-            
+            if (grade >= 3)
+            {
+                Console.WriteLine("Passed!");
+            }
         }
     }
 }
