@@ -1,19 +1,20 @@
 ﻿using System;
 
-namespace Multiplication_Table
+namespace Multiplication_Table_2._0
 {
     class Program
     {
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-
-            for (int i = 1; i <= 10; i++)
+            int times = int.Parse(Console.ReadLine());
+            do
             {
-                
-                int sum = n * i;
-                Console.WriteLine($"{n} X {i} = {sum}");
-            }
+                Console.WriteLine($"{n} X {times} = {n * times}");
+                times++;
+
+            } while (times <= 10);
+            
         }
     }
 }
