@@ -1,25 +1,36 @@
 ﻿using System;
 
-namespace Even_Number
+namespace Foreign_Languages
 {
     class Program
     {
         static void Main(string[] args)
         {
-            while (true)
-            {
-            int num = Math.Abs(int.Parse(Console.ReadLine()));
-                if (num % 2 == 0 )
-                {
-                    Console.WriteLine($"The number is: {Math.Abs(num)}");
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Please write an even number.");
-                }
+            //English is spoken in England and the USA.
 
-            }
+            //Spanish is spoken in Spain, Argentina, and Mexico.
+
+            //For the others, we should print "unknown".
+
+            string country = Console.ReadLine();
+
+            
+                switch (country)
+                {
+                    case "USA":
+                    case "England":
+                        Console.WriteLine("English");
+                        break;
+                    case "Spain":
+                    case "Argentina":
+                    case "Mexico":
+                        Console.WriteLine("Spanish");
+                        break;
+                    default:
+                        Console.WriteLine("unknown");
+                        break;
+                }
+            
         }
     }
 }
