@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Passed
+namespace Passed_or_Failed
 {
     class Program
     {
@@ -11,6 +11,10 @@ namespace Passed
             if (grade >= 3)
             {
                 Console.WriteLine("Passed!");
+            }
+            else
+            {
+                Console.WriteLine("Failed!");
             }
         }
     }
