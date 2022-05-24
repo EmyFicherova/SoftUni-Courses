@@ -1,28 +1,15 @@
 ﻿using System;
 
-namespace Back_In_30_Minutes
+namespace Divisible_by_3
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int hours = int.Parse(Console.ReadLine());
-            int mins = int.Parse(Console.ReadLine());
-
-            mins += 30;
-
-            if (mins >= 60)
+            for (int i = 3; i <= 100; i += 3)
             {
-                mins -= 60;
-                hours++;
+                Console.WriteLine(i);
             }
-            if (hours == 24)
-            {
-                hours = 0;
-            }
-
-            Console.WriteLine($"{hours}:{mins:d2}");
-
         }
     }
 }
