@@ -1,14 +1,24 @@
 ﻿using System;
 
-namespace Divisible_by_3
+namespace Even_Number
 {
     class Program
     {
         static void Main(string[] args)
         {
-            for (int i = 3; i <= 100; i += 3)
+            while (true)
             {
-                Console.WriteLine(i);
+            int num = Math.Abs(int.Parse(Console.ReadLine()));
+                if (num % 2 == 0 )
+                {
+                    Console.WriteLine($"The number is: {Math.Abs(num)}");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Please write an even number.");
+                }
+
             }
         }
     }
